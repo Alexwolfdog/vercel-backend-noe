@@ -3,7 +3,7 @@ const http=require('http')
 
 const app=express();
 app.use((req,res,next)=>{
-  return res.status(100).json("hello");
+  return "hello";
 });
 const server=http.createServer(app)
 
