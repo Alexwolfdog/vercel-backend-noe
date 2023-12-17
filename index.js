@@ -2,7 +2,7 @@ const express=require('express');
 const http=require('http')
 
 const app=express();
-app.use((req,res,next)=>{
+app.get("/",(req,res,next)=>{
   return "hello";
 });
 const server=http.createServer(app)
